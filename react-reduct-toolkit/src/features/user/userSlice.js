@@ -14,7 +14,7 @@ const fetchUsers = createAsyncThunk("user/fetchUser", async () => {
     );
 
     const mappedResult = result.data.map((user) => {
-      return user.id;
+      return user;
     });
     return mappedResult;
   } catch (err) {
